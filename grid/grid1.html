@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: white;
+        }
+
+        .main {
+            height: auto;
+            width: 1200px;
+            display: flex;
+            background-color: black;
+            gap: 80px;
+            margin-left: 200px;
+        }
+
+        .sub {
+            width: 90%;
+            height: auto;
+            display: grid;
+            grid-template-columns: auto;
+            gap: 20px;
+        }
+
+        .sub>div {
+            height: 200px;
+        }
+
+        .sub1 {
+            grid-column: 1 / span 4;
+            grid-row: 1;
+            background-image: url(Screenshot\ 2024-07-07\ 150704.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .sub2 {
+            grid-column: 5 / span 2;
+            background-image: url(Screenshot\ 2024-07-07\ 150745.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .sub3 {
+            background-image: url(Screenshot\ 2024-07-07\ 151743.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .sub4 {
+            grid-column: 2 /span 3;
+            background-image: url(Screenshot\ 2024-07-07\ 151804.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        .sub5 {
+            grid-column: 5 / span 2;
+            background-image: url(Screenshot\ 2024-07-07\ 151819.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .sub6 {
+            grid-column: 1 /span 3;
+            background-image: url(Screenshot\ 2024-07-07\ 152430.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        .sub7 {
+            grid-column: 4 / span 3;
+            background-image: url(Screenshot\ 2024-07-07\ 152455.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        .sub8 {
+            grid-column: 1 /span 2;
+            background-image: url(images\ \(1\).jpg);
+            background-size: cover;
+
+        }
+
+        .sub9 {
+            grid-column: 3/ span 2;
+            background-image: url(images.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        .sub10 {
+            grid-column: 5 /span 2;
+            background-image: url(image\ 3.jpg);
+        }
+
+        .text {
+            height: auto;
+            width: auto;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+            text-align: right;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        i:hover,
+        a:hover {
+            color: #FF8000;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .logo {
+            display: flex;
+            gap: 15px;
+            padding: 20px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .main {
+                height: auto;
+                width: auto;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .grid {
+                height: 1250px;
+                width: 1600px;
+                display: grid;
+                grid-template-columns: auto auto auto auto auto auto;
+                gap: 20px;
+                flex-direction: column;
+            }
+
+            .nav {
+                height: 300px;
+                width: 300px;
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                text-align: right;
+                flex-direction: column;
+                /* padding-right: 50px; */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="sub">
+            <div class="sub1"></div>
+            <div class="sub2"></div>
+            <div class="sub3"></div>
+            <div class="sub4"></div>
+            <div class="sub5"></div>
+            <div class="sub6"></div>
+            <div class="sub7"></div>
+            <div class="sub8"></div>
+            <div class="sub9"></div>
+            <div class="sub10"></div>
+        </div>
+        <div class="text">
+            <h2>SHUTTER</h2>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">PHOTOS</a></li>
+                <li><a href="#">BIO</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+            <div class="logo">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
